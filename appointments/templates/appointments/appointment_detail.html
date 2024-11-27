@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Sched it | Appointment detail{%endblock title %}
+
+{% block main %}
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h4><strong>Date:</strong> {{ appointment.date|date:"Y M d" }}</h4>
+        <h4><strong>Slot:</strong> {{ appointment.slot }}</h4>
+      </div>
+    </div>
+    
+
+    <a href="{% url 'appointments:appointment-list' %}" class="btn btn-outline-primary">
+      Back to main page
+    </a>
+  </div>
+
+  
+{% endblock main %}

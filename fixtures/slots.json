@@ -1,0 +1,66 @@
+[
+{
+  "model": "slots.slot",
+  "pk": 1,
+  "fields": {
+    "start_at": "09:00:00",
+    "end_at": "10:00:00"
+  }
+},
+{
+  "model": "slots.slot",
+  "pk": 2,
+  "fields": {
+    "start_at": "10:00:00",
+    "end_at": "11:00:00"
+  }
+},
+{
+  "model": "slots.slot",
+  "pk": 3,
+  "fields": {
+    "start_at": "11:00:00",
+    "end_at": "12:00:00"
+  }
+},
+{
+  "model": "slots.slot",
+  "pk": 4,
+  "fields": {
+    "start_at": "12:00:00",
+    "end_at": "13:00:00"
+  }
+},
+{
+  "model": "slots.slot",
+  "pk": 5,
+  "fields": {
+    "start_at": "13:00:00",
+    "end_at": "14:00:00"
+  }
+},
+{
+  "model": "slots.slot",
+  "pk": 6,
+  "fields": {
+    "start_at": "14:00:00",
+    "end_at": "15:00:00"
+  }
+},
+{
+  "model": "slots.slot",
+  "pk": 7,
+  "fields": {
+    "start_at": "15:00:00",
+    "end_at": "16:00:00"
+  }
+},
+{
+  "model": "slots.slot",
+  "pk": 8,
+  "fields": {
+    "start_at": "16:00:00",
+    "end_at": "17:00:00"
+  }
+}
+]

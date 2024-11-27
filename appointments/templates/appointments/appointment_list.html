@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Sched it | Appointment list{%endblock title %}
+
+{% block main %}
+  <div class="container mt-5">
+    <a href="{% url 'appointments:add-appointment' %}">
+      <button type="button" class="btn btn-outline-secondary w-15 ">Add a new appointment now</button>
+    </a>
+
+    <div class="card m-4 p-2">
+      {% for appointment in appointments %}
+      <div class="card-body">
+        <p class="card-text">{{ appointment.date|date:"Y M d" }} ({{ appointment.slot }})</p>
+      </div>
+      <div class="card-footer text-muted">
+        <p><a href="{% url 'appointments:appointment-detail' appointment.pk %}" class="text-decoration-none">
+          [View More]
+        </a></p>
+      </div> 
+      
+      {% empty %}
+      <div class="text-center">
+        <h4>There are no appointments right now</h4>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock main %}
